@@ -31,11 +31,11 @@
 ## 程式架構 
 使用 Python 撰寫
 
-自動爬蟲更新內政部實價登錄資料
+- 自動爬蟲更新內政部實價登錄資料
 
-每季自動分類、整理、刪除缺值與工商用地
+- 每季自動分類、整理、刪除缺值與工商用地
 
-利用標準差 / 本金 決定風險水平
+- 利用標準差 / 本金 決定風險水平
 
 ## 操作範例 
 範例投資人條件： <br/>
@@ -99,11 +99,11 @@ Combines favorable construction news (e.g., new MRT lines or developments) with 
 ## Code Structure
 Written in Python
 
-Web crawler automatically updates housing price data from the Ministry of the Interior
+- Web crawler automatically updates housing price data from the Ministry of the Interior
 
-Quarterly data is automatically categorized, cleaned (removing missing values and commercial land), and preprocessed
+- Quarterly data is automatically categorized, cleaned (removing missing values and commercial land), and preprocessed
 
-Risk level determined by standard deviation / capital
+- Risk level determined by standard deviation / capital
 
 ## Demo
 Sample Investor Profile: <br/>
