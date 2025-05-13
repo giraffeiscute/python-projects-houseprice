@@ -40,7 +40,8 @@
 ## 操作範例 
 範例投資人條件： <br/>
 資本額：1000 萬元，願意承擔風險 <br/>
-→ 系統將推薦報酬率高、風險可控的前五標的區段與預期報酬
+→ 系統將推薦 5 筆報酬率高、風險可控的前五標的區段與預期報酬
+<img src="https://github.com/giraffeiscute/python-projects-houseprice/blob/main/result/demo.png" alt="image" width="900">
 
 ## 技術關鍵 | Technical Highlights
 - 網路爬蟲（即時同步房價資料）
@@ -60,3 +61,74 @@
 戴晟恩 (Sheng-En Tai)
 
 林羽霈 (Yu-Pei Lin)
+
+
+****
+
+# House Price Forecasting Assistant 
+## Project Overview
+This project leverages historical housing price data to help various types of real estate investors assess risk, identify target locations, and achieve the goal of rational investing and stable returns.
+
+## System Features
+### Function 1: Regional Housing Price Risk and Return Analysis
+Calculates the standard deviation and average growth rate of price per ping (坪).
+
+Organizes data by year and street segment.
+
+### Function 2: Investment Recommendation System
+Based on the user's input capital and risk tolerance, the system categorizes investors into three tiers:
+
+| Investor Type   | Capital | Risk Tolerance | Recommended Strategy                          |
+| --------------- | ------- | -------------- | --------------------------------------------- |
+| Budget Investor | Low     | Yes            | High growth, low-risk areas                   |
+| New Investor    | Any     | No             | Only recommend segments with < 10% volatility |
+| Flipper         | High    | Yes            | High-potential, higher-risk areas             |
+
+
+### Function 3: Location Recommendation Queries
+Suggests the best towns for investment within a city/county.
+
+Identifies top-performing streets in a selected city based on return rates.
+
+### Function 4: Risk Tolerance-based Suggestions
+Displays recommendation sets based on whether the user can tolerate risk or not.
+
+### Function 5: Housing Price Trend Forecast
+Combines favorable construction news (e.g., new MRT lines or developments) with historical volatility to forecast potential housing price increases.
+
+## Code Structure
+Written in Python
+
+Web crawler automatically updates housing price data from the Ministry of the Interior
+
+Quarterly data is automatically categorized, cleaned (removing missing values and commercial land), and preprocessed
+
+Risk level determined by standard deviation / capital
+
+## Demo
+Sample Investor Profile: <br/>
+Capital: NT$10 million, Willing to take risks <br/>
+→ The system will recommend 5 high-return, controllable-risk street segments along with expected returns.
+
+<img src="https://github.com/giraffeiscute/python-projects-houseprice/blob/main/result/demo.png" alt="image" width="900">
+
+## Technical Highlights
+- Web Scraping: Syncs with real-time housing price data
+
+- Data Preprocessing: Quarterly merging, average price calculations, land area filtering
+
+- Auto Tiered Recommendation Algorithm
+
+- Price Forecasting Model: Based on historical volatility trends
+
+## References
+Ministry of the Interior Real Estate Transaction Database (Taiwan)
+
+## Authors
+Chih-Yuan Yang (楊致遠)
+
+Sheng-En Tai (戴晟恩)
+
+Yu-Pei Lin (林羽霈)
+
+
